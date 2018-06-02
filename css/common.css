@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* reset
+----------------------------------------------*/
+html,body,div,header,nav,main,section,footer,h1,h2,h3,p,ul,li,a,table,tr,td,small,img,iframe,blockquote {
+ 	margin: 0;
+	 padding: 0;
+	 line-height: 1.0;
+}
+ul {
+	 list-style: none;
+}
+a {
+	 color: #fff;
+	 text-decoration: none;
+}
+img {
+	 border: none;
+	 vertical-align: bottom;
+}
+main {
+  display: block; /* IE */
+}
+p {
+  color: #333;
+}
+.pcNone {
+  display: none;
+}
+
+/* layout
+----------------------------------------------*/
+body {
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+  background-image: url("../img/topimg/beside.gif");
+  background-repeat: repeat-x;
+  background-color: #eef4e6;
+}
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* header
+----------------------------------------------*/
+.header h1 {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  line-height: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+}
+#header {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#header .detail a {
+	 cursor: pointer;
+}
+.header .title {
+	 width: 30%;
+  height: 36px;
+  margin-left: 20px;
+		float: left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+		background: url("../img/topimg/title.png") no-repeat;
+}
+.header .detail {
+  margin-right: 20px;
+		float: right;
+  line-height: 1.5;
+}
+.header p a {
+  color: #333;
+}
+.header p img {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+/* global nav
+----------------------------------------------*/
+.header .gnav {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.header .gnav ul li {
+  float: left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header .gnav ul li a {
+  width: 192px;
+  height: 50px;
+  display: block;
+}
+/* nav image
+----------------------------------------------*/
+.header .gnav ul li a {
+	 background: url(../img/nav.png) no-repeat;
+}
+.header .gnav ul li.home a {
+  background-position: left top;
+}
+.header .gnav ul li.price a {
+  background-position: -192px top;
+}
+.header .gnav ul li.access a {
+  background-position: -384px top;
+}
+.header .gnav ul li.info a {
+  background-position: -576px top;
+}
+.header .gnav ul li.contact a {
+  background-position: -768px top;
+}
+.header .gnav ul li.home a:hover {
+  background-position: left -51px;
+}
+.header .gnav ul li.price a:hover {
+  background-position: -192px -51px;
+}
+.header .gnav ul li.access a:hover {
+  background-position: -384px -51px;
+}
+.header .gnav ul li.info a:hover {
+  background-position: -576px -51px;
+}
+.header .gnav ul li.contact a:hover {
+  background-position: -768px -51px;
+}
+/* header humbergerMenu
+----------------------------------------------*/
+#globalHeader {
+  display: none;
+}
+/* common
+----------------------------------------------*/
+h2 {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: #659700;
+  border-bottom: 2px solid #659700;
+}
+/* footer
+----------------------------------------------*/
+.footer {
+	 margin-top: 40px;
+	 min-width: 920px;
+}
+.footer p {
+  line-height: 50px;
+  clear: both;
+  text-align: center;
+  color: #fff;
+  background: #5cae80;
+}
+
+/* arrow
+----------------------------------------------*/
+#to-top img {
+	 position: fixed;
+	 right: 150px;
+	 bottom: 70px;
+}
