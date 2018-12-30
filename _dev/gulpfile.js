@@ -35,6 +35,7 @@ gulp.task('ejs', function(){
   gulp.src(
     [dir.dev + 'ejs/**/*.ejs','!' + dir.dev + 'ejs/**/_*.ejs']
   )
+    .pipe(plumber())
     .pipe(ejs( {}, {
       ext: '.html'
     }))
