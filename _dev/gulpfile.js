@@ -14,7 +14,7 @@ var dir = {
 }
 
 gulp.task('sass', function(){
-  gulp.src(dir.dev + 'sass/**/*scss')
+  gulp.src(dir.dev + 'sass/**/*.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer({
@@ -51,6 +51,6 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('default', ['sass', 'ejs', 'browser-sync'] , function(){
-  gulp.watch(dir.dev + 'sass/**/*scss', ['sass']);
+  gulp.watch(dir.dev + 'sass/**/*.scss', ['sass']);
   gulp.watch(dir.dev + 'ejs/**/*.ejs', ['ejs']);
 });
