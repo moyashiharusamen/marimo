@@ -9,7 +9,7 @@ var browserSync =require('browser-sync');
 
 var charset = '@charset "UTF-8";\n\n\n';
 var dir = {
-  dev : '_dev/',
+  dev : './',
   browsers : 'last 2 versions, ie >= 11'
 }
 
@@ -28,7 +28,7 @@ gulp.task('sass', function(){
       autosemicolon: true
     }))
     .pipe(header(charset))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('../css'));
 });
 
 gulp.task('ejs', function(){
@@ -38,7 +38,7 @@ gulp.task('ejs', function(){
     .pipe(ejs( {}, {
       ext: '.html'
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('../'));
 });
 
 gulp.task('browser-sync', function() {
